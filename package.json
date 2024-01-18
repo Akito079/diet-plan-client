@@ -12,8 +12,11 @@
     "axios": "^1.6.2",
     "pinia": "^2.1.7",
     "preline": "^2.0.2",
+    "primeicons": "^6.0.1",
+    "primevue": "^3.45.0",
     "vue": "^3.3.11",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "vuetify": "^3.4.9"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",

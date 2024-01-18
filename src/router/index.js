@@ -23,7 +23,6 @@ const router = createRouter({
       name: 'register',
       component: () => import('../views/Register.vue'),
       meta: { requiresAuth: false },
-      
     },
     {
       path: '/products',
@@ -44,9 +43,21 @@ const router = createRouter({
       meta: { requiresAuth: true },
     },
     {
-      path: '/dashboard',
-      name: 'dashboard',
-      component: () => import('../views/Dashboard.vue'),
+      path: '/dashboard/meals',
+      name: 'mealShow',
+      component: () => import('../views/AdminView.vue'),
+      meta: { requiresAuth: true },
+    },
+    {
+      path: '/dashboard/meals/create',
+      name: 'mealCreate',
+      component: () => import('../views/CreateMeals.vue'),
+      meta: { requiresAuth: true },
+    },
+    {
+      path: '/dashboard/meals/update/:mealId',
+      name: 'mealUpdate',
+      component: () => import('../views/UpdateMeals.vue'),
       meta: { requiresAuth: true },
     },
   ]
